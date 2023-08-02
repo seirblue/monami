@@ -273,6 +273,21 @@ nav .btn > li {
   width: 266px;
   height: 390px;
 }
+.visual .product2 .scroll{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.visual .product2 .scroll .icon{
+  text-align: center;
+  margin-top: 40px;
+}
+.visual .product2 .scroll .icon p{
+  margin-top: 20px;
+  font-size: 12px;
+  font-family: "Noto Sans KR";
+  color: #555;
+}
 .visual .product2 .pro-bottom2{
   width: 100%;
   height: 100%;
