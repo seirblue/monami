@@ -111,10 +111,6 @@ nav .btn {
 nav .btn > li {
   padding-left: 30px;
 }
-#contents {
-  /* position: relative;
-  top: 136px; */
-}
 .visual {
   width: 100%;
   height: 652px;
@@ -167,7 +163,7 @@ nav .btn > li {
   font-weight: 600;
   font-size: 32px;
   color: #000;
-  margin: 5px 0;
+  margin: 0 0 5px 0;
 }
 #contents .product1 .title h2::after {
   display: block;
@@ -183,12 +179,12 @@ nav .btn > li {
   margin: 10px 0;
 }
 #contents .product1 .preview .pre-top {
+  height: 360px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 #contents .product1 .preview .pre-top li:first-child > ul.box1 {
-  height: 364px;
+  height: 360px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -234,22 +230,34 @@ nav .btn > li {
 #contents .product2 .pro-top2 .button input {
   display: none;
 }
-#contents .product2 .pro-top2 .button ul li {
+.button ul {
+  width: calc(162px * 4);
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+#pen:checked ~ ul li:first-child label,
+#marker:checked ~ ul li:nth-child(2) label,
+#highlight:checked ~ ul li:nth-child(3) label,
+#art:checked ~ ul li:nth-child(4) label {
+  border-color: #c40f39;
+}
+.button ul li {
   width: 157px;
   height: 36px;
+}
+.button label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
   border: 2px solid #bcbcbc;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 1.5px;
 }
 #contents .product2 .pro-top2 .button ul li label {
   font-size: 14px;
   color: #898989;
-}
-#contents .product2 .pro-top2 .button ul li:first-child label:checked {
-  border: 1px solid #c40f39;
 }
 #contents .product2 .pro-middle ul {
   display: flex;
@@ -546,7 +554,7 @@ footer .foot-wrap {
   width: 1400px;
   margin: 0 auto;
 }
-footer .foot-wrap .foot-inner{
+footer .foot-wrap .foot-inner {
   height: 277px;
   display: flex;
   flex-direction: column;
@@ -579,7 +587,7 @@ footer .foot-wrap .foot-top > ul li:first-child a::before {
   content: "";
   margin-left: 0;
 }
-footer .foot-wrap .foot-line::after{
+footer .foot-wrap .foot-line::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -587,7 +595,7 @@ footer .foot-wrap .foot-line::after{
   display: block;
   margin: 20px 0;
 }
-footer .foot-wrap .foot-bottom .A{
+footer .foot-wrap .foot-bottom .A {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -604,24 +612,31 @@ footer .foot-wrap .foot-bottom .A .foot-bottom-left .info {
   font-weight: normal;
   line-height: 30px;
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-left .address li p{
+footer .foot-wrap .foot-bottom .A .foot-bottom-left .address li p {
   font-family: "Noto Sans KR";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-left .address li p::after{
+footer .foot-wrap .foot-bottom .A .foot-bottom-left .address li p::after {
   content: "|";
   color: rgba(255, 255, 255, 0.3);
   margin: 0 20px;
   font-size: 12px;
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-left .address li:last-child p::after{
+footer
+  .foot-wrap
+  .foot-bottom
+  .A
+  .foot-bottom-left
+  .address
+  li:last-child
+  p::after {
   content: "";
   margin: 0;
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-left .copyright{
+footer .foot-wrap .foot-bottom .A .foot-bottom-left .copyright {
   font-family: "Noto Sans KR";
   color: rgba(255, 255, 255, 0.3);
   font-size: 12px;
@@ -631,12 +646,12 @@ footer .foot-wrap .foot-bottom .A .foot-bottom-left .copyright{
 footer .foot-wrap .foot-bottom .A .foot-bottom-left .address {
   display: flex;
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-center{
+footer .foot-wrap .foot-bottom .A .foot-bottom-center {
   position: absolute;
   left: 620px;
   top: 0;
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-center p{
+footer .foot-wrap .foot-bottom .A .foot-bottom-center p {
   line-height: 30px;
 }
 footer .foot-wrap .foot-bottom .A .foot-bottom-center .cc {
@@ -647,7 +662,7 @@ footer .foot-wrap .foot-bottom .A .foot-bottom-center .number {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.5);
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-right{
+footer .foot-wrap .foot-bottom .A .foot-bottom-right {
   width: 242px;
   height: 34px;
   box-sizing: border-box;
@@ -662,10 +677,10 @@ footer .foot-wrap .foot-bottom .A .foot-bottom-right a {
   color: rgba(255, 255, 255, 0.4);
   font-family: "Noto Sans KR";
 }
-footer .foot-wrap .foot-bottom .A .foot-bottom-right a img{
+footer .foot-wrap .foot-bottom .A .foot-bottom-right a img {
   vertical-align: middle;
 }
-.pop-btn{
+.pop-btn {
   position: fixed;
   right: 5%;
   top: 20%;
@@ -680,7 +695,7 @@ footer .foot-wrap .foot-bottom .A .foot-bottom-right a img{
   justify-content: space-between;
   align-items: center; */
 }
-.pop-btn .btn-box-p{
+.pop-btn .btn-box-p {
   position: absolute;
   left: 50%;
   top: 65%;
@@ -688,13 +703,13 @@ footer .foot-wrap .foot-bottom .A .foot-bottom-right a img{
   flex-direction: column;
   justify-content: space-between;
 }
-.pop-btn .btn-box-p > img{
+.pop-btn .btn-box-p > img {
   position: absolute;
   left: 50%;
   top: 40px;
   transform: translateX(-50%);
 }
-.pop-btn .btn-box-p .btn-box{
+.pop-btn .btn-box-p .btn-box {
   position: absolute;
   transform: translate(-50%, -50%);
   display: flex;
@@ -707,12 +722,12 @@ footer .foot-wrap .foot-bottom .A .foot-bottom-right a img{
   border-radius: 30px;
   background: #fff;
 }
-.pop-btn .btn-box-p .btn-box a{
+.pop-btn .btn-box-p .btn-box a {
   display: flex;
   margin-left: 20px;
   font-size: 15px;
   color: #222;
 }
-.pop-btn .btn-box-p .btn-box a:first-child{
+.pop-btn .btn-box-p .btn-box a:first-child {
   margin-left: 30px;
 }
