@@ -179,9 +179,26 @@ nav .btn > li {
   margin: 10px 0;
 }
 #contents .product1 .preview .pre-top {
-  height: 360px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+#contents .product1 .preview .pre-top > li:first-child{
+  height: 360px;
+}
+#contents .product1 .preview .pre-top > li:first-child img{
+  width: 392px;
+  height: 220px;
+  object-fit: cover;
+}
+#contents .product1 .preview .pre-top > li:last-child{
+  height: 360px;
+}
+#contents .product1 .preview .pre-top li:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #contents .product1 .preview .pre-top li:first-child > ul.box1 {
   height: 360px;
