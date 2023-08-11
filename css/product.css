@@ -233,13 +233,13 @@ nav .btn > li {
   width: 100%;
   margin-bottom: 200px;
 }
-#visual .go-top{
-    position: fixed;
-    right: 3%;
-    bottom: 30%;
-    width: 46px;
-    height: 46px;
-    border: 2px solid #c40f39;
+#visual .go-top {
+  position: fixed;
+  right: 3%;
+  bottom: 30%;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #c40f39;
 }
 #visual .visual-maintext h1 {
   font-size: 38px;
@@ -321,16 +321,16 @@ nav .btn > li {
   line-height: 180%;
   margin-bottom: 15px;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-bottom-right span{
-    color: #333;
+#visual .visual-inner .visual-inner-bottom .visual-inner-bottom-right span {
+  color: #333;
 }
-#visual .visual-inner .visual-inner-bottom-end{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+#visual .visual-inner .visual-inner-bottom-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-#visual .visual-inner .visual-inner-bottom-end p{
-    margin-right: 20px;
+#visual .visual-inner .visual-inner-bottom-end p {
+  margin-right: 20px;
 }
 footer {
   width: 100%;
