@@ -158,25 +158,13 @@ nav .btn > li {
 #contents .con-top .con-top-inner {
   /* width: 100%; */
   height: 342px;
-  background: url(../images/page_visual1.jpg);
+  background: url(../images/page_visual2.jpg);
   object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
-}
-#contents .con-top .con-top-inner h2 {
-  font-size: 34px;
-  font-weight: 500;
-}
-#contents .con-top .con-top-inner h2::after {
-  content: "";
-  width: 30px;
-  height: 4px;
-  background: #c40f39;
-  display: block;
-  margin: 10px auto;
 }
 #contents .con-top .con-top-inner p {
   font-size: 15px;
@@ -195,15 +183,12 @@ nav .btn > li {
 #contents .con-btn input {
   display: none;
 }
-#message:checked ~ ul li:first-child label,
-#cominfo:checked ~ ul li:nth-child(2) label,
-#history:checked ~ ul li:nth-child(3) label,
-#ethics:checked ~ ul li:nth-child(4) label,
-#investment:checked ~ ul li:nth-child(5) label,
-#ci:checked ~ ul li:nth-child(6) label,
-#Recruitment:checked ~ ul li:nth-child(7) label,
-#navi:checked ~ ul li:nth-child(8) label,
-#safety:checked ~ ul li:last-child label {
+#pen:checked ~ ul li:first-child label,
+#marker:checked ~ ul li:nth-child(2) label,
+#highlighter:checked ~ ul li:nth-child(3) label,
+#art:checked ~ ul li:nth-child(4) label,
+#etc:checked ~ ul li:nth-child(5) label,
+#catalog:checked ~ ul li:last-child label{
   background: #c40f39;
   border: 1px solid #c40f39;
   color: #fff;
@@ -214,7 +199,7 @@ nav .btn > li {
   align-items: center;
 }
 #contents .con-btn ul li {
-  width: calc(100% / 9);
+  width: calc(100% / 6);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -264,73 +249,45 @@ nav .btn > li {
   width: 1400px;
   margin: 0 auto;
 }
-#visual .visual-inner .visual-inner-top {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+#visual .visual-inner .visual-inner-top{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
 }
-#visual .visual-inner .visual-inner-top .visual-img {
-  position: relative;
-  width: 810px;
-  height: 408px;
-  background: url(../images/message_ceo.jpg);
+#visual .visual-inner .visual-inner-top li{
+    width: 25%;
+    padding: 5px 20px;
+    margin: 0 10px;
+    text-align: center;
+    border-bottom: 2px solid #dcdcdc;
+    cursor: pointer;
 }
-#visual .visual-inner .visual-inner-top .visual-img::before {
-  display: block;
-  content: "";
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  background: #c40f39;
-  z-index: -1;
+#visual .visual-inner .visual-inner-top li a{
+    color: #777;
+    font-size: 15px;
+    font-weight: 500;
 }
-#visual .visual-inner .visual-inner-top .text_area {
-  position: absolute;
-  width: 662px;
-  height: 293px;
-  top: 15%;
-  left: 53%;
-  background: url(../images/message_slg_bg.png) no-repeat;
-  background-color: #e3e3e3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
+#visual .visual-inner .visual-inner-top li:hover a{
+    color: #c40f39;
 }
-#visual .visual-inner .visual-inner-top .text_area h1 {
-  color: #000;
-  font-weight: 300;
-  font-size: 36px;
-  margin-left: 50px;
+#visual .visual-inner .visual-inner-middle ul{
+    display: flex;
+    flex-wrap: wrap;
 }
-#visual .visual-inner .visual-inner-top .text_area h1 span {
-  color: #c40f39;
-  font-weight: 400;
+#visual .visual-inner .visual-inner-middle ul li img{
+    width: 264px;
+    height: 390px;
 }
-#visual .visual-inner .visual-inner-bottom {
-  width: 1400px;
-  display: flex;
-  justify-content: space-around;
-  margin: 50px auto 0;
+#visual .visual-inner .visual-inner-middle ul li span.sub-text{
+    font-family: Montserrat;
+    font-size: 12px;
+    color: #b3b3b3;
 }
-#visual .visual-inner .visual-inner-bottom p {
-  color: #777;
-  font-size: 14px;
-  line-height: 180%;
-  margin-bottom: 15px;
-}
-#visual .visual-inner .visual-inner-bottom .visual-inner-bottom-right span {
-  color: #333;
-}
-#visual .visual-inner .visual-inner-bottom-end {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-#visual .visual-inner .visual-inner-bottom-end p {
-  margin-right: 20px;
+#visual .visual-inner .visual-inner-middle ul li span.main-text{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
 }
 footer {
   width: 100%;
