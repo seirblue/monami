@@ -116,18 +116,20 @@ nav ul.text li.first ul.sub-A{
 } */
 nav ul.text li ul.sub-A li a{
   font-size: 17px;
+  font-weight: 400;
 }
 nav ul.text li ul.sub-A li a::after{
   content: none;
 }
-nav ul.text li.first ul.sub-A::before{
-  content: "모나미소개";
+nav ul.text li ul.sub-A::before{
   display: block;
   font-size: 21px;
   font-weight: 500;
-  font-family: "Noto Sans KR";
   color: #303030;
   margin-bottom: 50px;
+}
+nav ul.text li.first ul.sub-A::before{
+  content: "모나미소개";
 }
 nav ul.text li.first ul.sub-A li:first-child:before,
 nav ul.text li.second ul.sub-A li:first-child:before,
@@ -149,60 +151,30 @@ nav ul.text li.second ul.sub-A{
 }
 nav ul.text li.second ul.sub-A::before{
   content: "모나미제품";
-  display: block;
-  font-size: 21px;
-  font-weight: 500;
-  font-family: "Noto Sans KR";
-  color: #303030;
-  margin-bottom: 50px;
 }
 nav ul.text li.third ul.sub-A{
   left: -20px;
 }
 nav ul.text li.third ul.sub-A::before{
   content: "NEWS & VIDEO";
-  display: block;
-  font-size: 21px;
-  font-weight: 500;
-  font-family: "Noto Sans KR";
-  color: #303030;
-  margin-bottom: 50px;
 }
 nav ul.text li.four ul.sub-A{
   left: 30px;
 }
 nav ul.text li.four ul.sub-A::before{
   content: "모나미 미술대회";
-  display: block;
-  font-size: 21px;
-  font-weight: 500;
-  font-family: "Noto Sans KR";
-  color: #303030;
-  margin-bottom: 50px;
 }
 nav ul.text li.five ul.sub-A{
-  left: 50px;
+  left: 90px;
 }
 nav ul.text li.five ul.sub-A::before{
   content: "고객지원";
-  display: block;
-  font-size: 21px;
-  font-weight: 500;
-  font-family: "Noto Sans KR";
-  color: #303030;
-  margin-bottom: 50px;
 }
 nav ul.text li.six ul.sub-A{
-  left: 100px;
+  left: 140px;
 }
 nav ul.text li.six ul.sub-A::before{
   content: "기업 구매 / 개발";
-  display: block;
-  font-size: 21px;
-  font-weight: 500;
-  font-family: "Noto Sans KR";
-  color: #303030;
-  margin-bottom: 50px;
 }
 /* nav ul.text li ul.sub-A li{
   padding-top: 0 !important;

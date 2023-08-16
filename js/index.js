@@ -1,5 +1,5 @@
 let status = true;
-let ele = document.querySelectorAll(".text ul");
+let ele = document.querySelector(".text ul");
 document.getElementById("menu").onclick = function () {
   document.getElementById("bg").classList.toggle("bg");
   if (status) {
