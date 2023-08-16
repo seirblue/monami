@@ -368,27 +368,27 @@ nav .btn > li {
 #visual .visual-inner .visual-inner-bottom {
   margin: 120px 0;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button {
+#visual .visual-inner .visual-inner-bottom {
   width: 1400px;
   margin: 0 auto;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button input {
+#visual .visual-inner .visual-inner-bottom input {
   display: none;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button ul {
+#visual .visual-inner .visual-inner-bottom ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button ul li{
+#visual .visual-inner .visual-inner-bottom ul li{
   display: flex;
   justify-content: center;
   box-sizing: border-box;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button ul li:hover label{
+#visual .visual-inner .visual-inner-bottom ul li:hover label{
   border: 1px solid#c40f39;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button ul li label {
+#visual .visual-inner .visual-inner-bottom ul li label {
   width: 40px;
   height: 40px;
   border: 1px solid #ddd;
@@ -400,11 +400,11 @@ nav .btn > li {
   text-align: center;
   line-height: 40px;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button ul li:first-child,
-#visual .visual-inner .visual-inner-bottom .visual-inner-button ul li:last-child {
+#visual .visual-inner .visual-inner-bottom ul li:first-child,
+#visual .visual-inner .visual-inner-bottom ul li:last-child {
   margin: 0 38px;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-button ul li img {
+#visual .visual-inner .visual-inner-bottom ul li img {
   vertical-align: middle;
   cursor: pointer;
 }
@@ -416,9 +416,7 @@ nav .btn > li {
 #five:checked ~ ul li:nth-child(6) label,
 #six:checked ~ ul li:nth-child(7) label,
 #next:checked ~ ul li:last-child label {
-  background: #c40f39;
   border: 1px solid#c40f39;
-  color: #fff;
 }
 footer {
   width: 100%;
