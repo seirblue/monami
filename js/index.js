@@ -1,11 +1,19 @@
-let status = true;
-let ele = document.querySelector(".text ul");
-document.getElementById("menu").onclick = function () {
-  document.getElementById("bg").classList.toggle("bg");
-  if (status) {
-    ele.classList.replace("sub", "sub-A");
+let lnb = true;
+let ele = document.querySelectorAll(".sub");
+let n = ele.length;
+document.getElementById("menu").onclick = function (e) {
+  e.preventDefault();
+  document.getElementById("bg").classList.toggle("on");
+  if (lnb) {
+    for (let i = 0; i < n; i++) {
+      ele[i].classList.replace("sub", "sub-A");
+    }
+    document.querySelectorAll("sub-A").classList.add("on");
+    // }
   } else {
-    ele.classList.replace("sub-A", "sub");
+    for (let i = 0; i < n; i++) {
+      ele[i].classList.replace("sub-A", "sub");
+    }
   }
-  status = !status;
+  lnb = !lnb;
 };

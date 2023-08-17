@@ -106,6 +106,8 @@ nav ul.text li ul.sub-A{
   background: none;
   text-align: left;
   font-family: "Noto Sans KR";
+  transition: height 0.5s;
+  overflow: hidden;
 }
 nav ul.text li.first ul.sub-A{
   left: -262px;
@@ -276,8 +278,12 @@ nav .btn > li {
 } */
 nav div.bg{
   width: 1400px;
-  height: 460px;
+  height: 0px;
   background: rgba(255, 255, 255, 0.9);
+  transition: height 0.5s;
+}
+nav div.bg.on{
+  height: 460px;
 }
 .visual {
   width: 100%;
