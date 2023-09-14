@@ -38,6 +38,7 @@ $(function () {
         $(".text > li ul").eq(i).addClass("sub");
         $(".text > li ul").eq(i).stop().slideUp();
       }
+      $(".sub").removeClass("on");
     }
     lnb = !lnb;
   });
@@ -45,6 +46,7 @@ $(function () {
   $(".text > li ul").css({
     display: "none",
   });
+  
   $(".text > li").hover(
     function () {
       $(this).find("ul.sub").stop().slideDown();
