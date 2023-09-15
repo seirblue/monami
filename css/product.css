@@ -350,6 +350,12 @@ nav div.bg.on {
   background: #c40f39;
   margin: 5px auto 100px;
 }
+#visual .visual-maintext{
+  display: none;
+}
+#visual .visual-maintext1{
+  display: block;
+}
 #visual .visual-maintext h1 span {
   color: #c40f39;
 }
@@ -358,13 +364,25 @@ nav div.bg.on {
   margin: 0 auto;
   display: none;
 }
-#visual .visual-inner2{
+#visual .visual-inner1{
   display: block;
 }
 #visual .visual-inner .visual-inner-top {
   width: 50%;
   display: flex;
   margin: 0 auto;
+}
+#visual .visual-inner3 .visual-inner-top {
+  width: fit-content;
+  margin: 0 auto;
+}
+#visual .visual-inner3 .visual-inner-top li {
+  width: 100% !important;
+  padding: 5px 20px;
+  margin: 0 10px;
+  text-align: center;
+  border-bottom: 2px solid #dcdcdc;
+  cursor: pointer;
 }
 #visual .visual-inner .visual-inner-top li {
   width: 25%;
@@ -382,9 +400,6 @@ nav div.bg.on {
 #visual .visual-inner .visual-inner-top li:hover a {
   color: #c40f39;
 }
-/* #visual .visual-inner .visual-inner-middle{
-  display: none;
-} */
 #visual .visual-inner .m2,
 #visual .visual-inner .m3,
 #visual .visual-inner .m4,
@@ -407,11 +422,17 @@ nav div.bg.on {
 #visual .visual-inner1 .m6 ul li {
   margin: 0 9px;
 }
-#visual .visual-inner2 .m7 ul {
+#visual .visual-inner2 .m7 ul,
+#visual .visual-inner3 .m1 ul,
+#visual .visual-inner5 .m3 ul,
+#visual .visual-inner6 .m1 ul {
   display: flex;
   justify-content: flex-start;
 }
-#visual .visual-inner2 .m7 ul li {
+#visual .visual-inner2 .m7 ul li,
+#visual .visual-inner3 .m1 ul li,
+#visual .visual-inner5 .m3 ul li,
+#visual .visual-inner6 .m1 ul li {
   margin: 0 5px;
 }
 #visual .visual-inner .visual-inner-middle ul li {
@@ -553,6 +574,31 @@ nav div.bg.on {
 #six2:checked ~ ul li:nth-child(7) label,
 #seven2:checked ~ ul li:nth-child(8) label,
 #next2:checked ~ ul li:last-child label {
+  border: 1px solid#c40f39;
+}
+#prev3:checked ~ ul li:first-child label,
+#one3:checked ~ ul li:nth-child(2) label,
+#two3:checked ~ ul li:nth-child(3) label,
+#three3:checked ~ ul li:nth-child(4) label,
+#next3:checked ~ ul li:last-child label {
+  border: 1px solid#c40f39;
+}
+#prev4:checked ~ ul li:first-child label,
+#one4:checked ~ ul li:nth-child(2) label,
+#two4:checked ~ ul li:nth-child(3) label,
+#next4:checked ~ ul li:last-child label {
+  border: 1px solid#c40f39;
+}
+#prev5:checked ~ ul li:first-child label,
+#one5:checked ~ ul li:nth-child(2) label,
+#two5:checked ~ ul li:nth-child(3) label,
+#three5:checked ~ ul li:nth-child(4) label,
+#next5:checked ~ ul li:last-child label {
+  border: 1px solid#c40f39;
+}
+#prev6:checked ~ ul li:first-child label,
+#one6:checked ~ ul li:nth-child(2) label,
+#next6:checked ~ ul li:last-child label {
   border: 1px solid#c40f39;
 }
 footer {

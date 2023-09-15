@@ -86,11 +86,27 @@ $(function () {
   })
 
   $("div.con-btn ul li:first-child label").click(function(){
-    $("div.visual-inner").css({display:"none"})
-    $("div.visual-inner1").css({display:"block"})
+    $("div.visual-inner, div.visual-maintext2").css({display:"none"})
+    $("div.visual-inner1, div.visual-maintext1").css({display:"block"})
   })
   $("div.con-btn ul li:nth-child(2) label").click(function(){
-    $("div.visual-inner").css({display:"none"})
-    $("div.visual-inner2").css({display:"block"})
+    $("div.visual-inner, div.visual-maintext2").css({display:"none"})
+    $("div.visual-inner2, div.visual-maintext1").css({display:"block"})
+  })
+  $("div.con-btn ul li:nth-child(3) label").click(function(){
+    $("div.visual-inner, div.visual-maintext2").css({display:"none"})
+    $("div.visual-inner3, div.visual-maintext1").css({display:"block"})
+  })
+  $("div.con-btn ul li:nth-child(4) label").click(function(){
+    $("div.visual-inner, div.visual-maintext2").css({display:"none"})
+    $("div.visual-inner4, div.visual-maintext1").css({display:"block"})
+  })
+  $("div.con-btn ul li:nth-child(5) label").click(function(){
+    $("div.visual-inner, div.visual-maintext2").css({display:"none"})
+    $("div.visual-inner5, div.visual-maintext1").css({display:"block"})
+  })
+  $("div.con-btn ul li:nth-child(6) label").click(function(){
+    $("div.visual-inner, div.visual-maintext1").css({display:"none"})
+    $("div.visual-inner6, div.visual-maintext2").css({display:"block"})
   })
 });
