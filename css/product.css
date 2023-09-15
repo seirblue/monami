@@ -362,7 +362,6 @@ nav div.bg.on {
 #visual .visual-inner {
   width: 1400px;
   margin: 0 auto;
-  display: none;
 }
 #visual .visual-inner1{
   display: block;
@@ -454,6 +453,7 @@ nav div.bg.on {
   height: 390px;
   background: rgba(0, 0, 0, 0.4);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 #visual .visual-inner .visual-inner-middle ul li:hover .plus-btn {
   opacity: 1;
