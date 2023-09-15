@@ -38,14 +38,14 @@ $(function () {
         $(".text > li ul").eq(i).addClass("sub");
         $(".text > li ul").eq(i).stop().slideUp();
       }
-      $(".sub").removeClass("on");
+      $(".sub").removeClass("on").css({display:"none"});
     }
     lnb = !lnb;
   });
 
-  $(".text > li ul").css({
+  /* $(".text > li ul").css({
     display: "none",
-  });
+  }); */
   
   $(".text > li").hover(
     function () {
@@ -102,4 +102,10 @@ $(function () {
         display: "none",
       });
     });
+
+    $(".close-btn").click(function(){
+      $("div.pop-btn").css({
+        display:"none"
+      })
+    })
 });
