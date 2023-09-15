@@ -97,10 +97,10 @@ nav ul {
 nav ul.text > li {
   position: relative;
 }
-nav ul.text li ul.sub{
+nav ul.text li ul.sub {
   display: none;
 }
-nav ul.text li ul.sub-A{
+nav ul.text li ul.sub-A {
   position: absolute;
   display: block;
   width: calc(1400px / 6);
@@ -112,28 +112,28 @@ nav ul.text li ul.sub-A{
   /* transition: height 0.5s; */
   /* overflow: hidden; */
 }
-nav ul.text li.first ul.sub-A{
+nav ul.text li.first ul.sub-A {
   left: -262px;
 }
 /* nav ul.text li ul.sub-A li{
   text-align: left;
   margin-left: 50px;
 } */
-nav ul.text li ul.sub-A li a{
+nav ul.text li ul.sub-A li a {
   font-size: 17px;
   font-weight: 400;
 }
-nav ul.text li ul.sub-A li a::after{
+nav ul.text li ul.sub-A li a::after {
   content: none;
 }
-nav ul.text li ul.sub-A::before{
+nav ul.text li ul.sub-A::before {
   display: block;
   font-size: 21px;
   font-weight: 500;
   color: #303030;
   margin-bottom: 50px;
 }
-nav ul.text li.first ul.sub-A::before{
+nav ul.text li.first ul.sub-A::before {
   content: "모나미소개";
 }
 nav ul.text li.first ul.sub-A li:first-child:before,
@@ -141,7 +141,7 @@ nav ul.text li.second ul.sub-A li:first-child:before,
 nav ul.text li.third ul.sub-A li:first-child:before,
 nav ul.text li.four ul.sub-A li:first-child:before,
 nav ul.text li.five ul.sub-A li:first-child:before,
-nav ul.text li.six ul.sub-A li:first-child:before{
+nav ul.text li.six ul.sub-A li:first-child:before {
   position: absolute;
   display: block;
   content: "";
@@ -150,34 +150,34 @@ nav ul.text li.six ul.sub-A li:first-child:before{
   top: 90px;
   background: #c40f39;
 }
-nav ul.text li.second ul.sub-A{
+nav ul.text li.second ul.sub-A {
   left: -150px;
 }
-nav ul.text li.second ul.sub-A::before{
+nav ul.text li.second ul.sub-A::before {
   content: "모나미제품";
 }
-nav ul.text li.third ul.sub-A{
+nav ul.text li.third ul.sub-A {
   left: -20px;
 }
-nav ul.text li.third ul.sub-A::before{
+nav ul.text li.third ul.sub-A::before {
   content: "NEWS & VIDEO";
 }
-nav ul.text li.four ul.sub-A{
+nav ul.text li.four ul.sub-A {
   left: 30px;
 }
-nav ul.text li.four ul.sub-A::before{
+nav ul.text li.four ul.sub-A::before {
   content: "모나미 미술대회";
 }
-nav ul.text li.five ul.sub-A{
+nav ul.text li.five ul.sub-A {
   left: 90px;
 }
-nav ul.text li.five ul.sub-A::before{
+nav ul.text li.five ul.sub-A::before {
   content: "고객지원";
 }
-nav ul.text li.six ul.sub-A{
+nav ul.text li.six ul.sub-A {
   left: 140px;
 }
-nav ul.text li.six ul.sub-A::before{
+nav ul.text li.six ul.sub-A::before {
   content: "기업 구매 / 개발";
 }
 /* nav ul.text li ul.sub-A li{
@@ -196,7 +196,7 @@ nav ul.text > li ul {
   display: block;
 } */
 nav ul.text > li:hover > a,
-nav ul.text > li > ul li:hover > a  {
+nav ul.text > li > ul li:hover > a {
   color: #c40f39;
 }
 nav ul.text > li ul li {
@@ -236,6 +236,15 @@ nav .btn {
 }
 nav .btn > li {
   padding-left: 30px;
+}
+nav div.bg {
+  width: 1400px;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: height 0.5s;
+}
+nav div.bg.on {
+  height: 460px;
 }
 /* #menu-all{
   width: 1400px;
@@ -278,15 +287,6 @@ nav .btn > li {
   color: #6e6e6e;
   font-weight: 400;
 } */
-nav div.bg{
-  width: 1400px;
-  height: 0px;
-  background: rgba(255, 255, 255, 0.9);
-  transition: height 0.5s;
-}
-nav div.bg.on{
-  height: 460px;
-}
 .visual {
   width: 100%;
   height: 652px;
@@ -624,10 +624,10 @@ ul.box1 li:nth-child(2):hover .plus-btn {
 }
 .mySwiper2,
 .mySwiper3,
-.mySwiper4{
+.mySwiper4 {
   display: none;
 }
-#contents .product2 .pro-middle{
+#contents .product2 .pro-middle {
   width: 100%;
   margin: 0 auto;
 }

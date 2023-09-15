@@ -84,6 +84,7 @@ body {
   font-size: 11px;
   color: #9b9a9a;
 }
+
 nav {
   width: 1400px;
   margin: 0 auto;
@@ -96,18 +97,104 @@ nav ul {
 nav ul.text > li {
   position: relative;
 }
+nav ul.text li ul.sub {
+  display: none;
+}
+nav ul.text li ul.sub-A {
+  position: absolute;
+  display: block;
+  width: calc(1400px / 6);
+  /* height: 460px; */
+  top: 55px;
+  background: transparent;
+  text-align: left;
+  font-family: "Noto Sans KR";
+  /* transition: height 0.5s; */
+  /* overflow: hidden; */
+}
+nav ul.text li.first ul.sub-A {
+  left: -262px;
+}
+/* nav ul.text li ul.sub-A li{
+  text-align: left;
+  margin-left: 50px;
+} */
+nav ul.text li ul.sub-A li a {
+  font-size: 17px;
+  font-weight: 400;
+}
+nav ul.text li ul.sub-A li a::after {
+  content: none;
+}
+nav ul.text li ul.sub-A::before {
+  display: block;
+  font-size: 21px;
+  font-weight: 500;
+  color: #303030;
+  margin-bottom: 50px;
+}
+nav ul.text li.first ul.sub-A::before {
+  content: "모나미소개";
+}
+nav ul.text li.first ul.sub-A li:first-child:before,
+nav ul.text li.second ul.sub-A li:first-child:before,
+nav ul.text li.third ul.sub-A li:first-child:before,
+nav ul.text li.four ul.sub-A li:first-child:before,
+nav ul.text li.five ul.sub-A li:first-child:before,
+nav ul.text li.six ul.sub-A li:first-child:before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  top: 90px;
+  background: #c40f39;
+}
+nav ul.text li.second ul.sub-A {
+  left: -150px;
+}
+nav ul.text li.second ul.sub-A::before {
+  content: "모나미제품";
+}
+nav ul.text li.third ul.sub-A {
+  left: -20px;
+}
+nav ul.text li.third ul.sub-A::before {
+  content: "NEWS & VIDEO";
+}
+nav ul.text li.four ul.sub-A {
+  left: 30px;
+}
+nav ul.text li.four ul.sub-A::before {
+  content: "모나미 미술대회";
+}
+nav ul.text li.five ul.sub-A {
+  left: 90px;
+}
+nav ul.text li.five ul.sub-A::before {
+  content: "고객지원";
+}
+nav ul.text li.six ul.sub-A {
+  left: 140px;
+}
+nav ul.text li.six ul.sub-A::before {
+  content: "기업 구매 / 개발";
+}
+/* nav ul.text li ul.sub-A li{
+  padding-top: 0 !important;
+} */
 nav ul.text > li ul {
   position: absolute;
-  display: none;
+  display: block;
   left: -30px;
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
   width: 100%;
   padding: 34px 30px 0;
 }
-nav ul.text > li:hover ul {
+/* nav ul.text > li:hover ul {
   display: block;
-}
+} */
 nav ul.text > li:hover > a,
 nav ul.text > li > ul li:hover > a {
   color: #c40f39;
@@ -149,6 +236,15 @@ nav .btn {
 }
 nav .btn > li {
   padding-left: 30px;
+}
+nav div.bg {
+  width: 1400px;
+  height: 0px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: height 0.5s;
+}
+nav div.bg.on {
+  height: 460px;
 }
 #contents {
 }
@@ -233,13 +329,13 @@ nav .btn > li {
   width: 100%;
   margin-bottom: 200px;
 }
-#visual .go-top{
-    position: fixed;
-    right: 3%;
-    bottom: 30%;
-    width: 46px;
-    height: 46px;
-    border: 2px solid #c40f39;
+#visual .go-top {
+  position: fixed;
+  right: 3%;
+  bottom: 30%;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #c40f39;
 }
 #visual .visual-maintext h1 {
   font-size: 38px;
@@ -321,16 +417,16 @@ nav .btn > li {
   line-height: 180%;
   margin-bottom: 15px;
 }
-#visual .visual-inner .visual-inner-bottom .visual-inner-bottom-right span{
-    color: #333;
+#visual .visual-inner .visual-inner-bottom .visual-inner-bottom-right span {
+  color: #333;
 }
-#visual .visual-inner .visual-inner-bottom-end{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+#visual .visual-inner .visual-inner-bottom-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-#visual .visual-inner .visual-inner-bottom-end p{
-    margin-right: 20px;
+#visual .visual-inner .visual-inner-bottom-end p {
+  margin-right: 20px;
 }
 footer {
   width: 100%;
