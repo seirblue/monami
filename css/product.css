@@ -282,11 +282,28 @@ nav .btn > li {
 #visual .visual-inner .visual-inner-top li:hover a {
   color: #c40f39;
 }
+/* #visual .visual-inner .visual-inner-middle{
+  display: none;
+} */
+#visual .visual-inner .m2,
+#visual .visual-inner .m3,
+#visual .visual-inner .m4,
+#visual .visual-inner .m5,
+#visual .visual-inner .m6 {
+  display: none;
+}
 #visual .visual-inner .visual-inner-middle ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
+}
+#visual .visual-inner .m6 ul{
+  display: flex;
+  justify-content: flex-start;
+}
+#visual .visual-inner .m6 ul li{
+  margin: 0 10px;
 }
 #visual .visual-inner .visual-inner-middle ul li {
   position: relative;
@@ -363,7 +380,7 @@ nav .btn > li {
   font-size: 15px;
   font-weight: 600;
   color: #000;
-  line-height: 0;
+  line-height: 20px;
 }
 #visual .visual-inner .visual-inner-bottom {
   margin: 120px 0;
