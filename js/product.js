@@ -60,34 +60,33 @@ $(function () {
   $("div.visual-inner1").css({display:"block"})
 
   $("div.con-btn ul li:first-child label").click(function () {
-    $("div.visual-inner, div.visual-maintext2").css({ display: "none" });
-    $("div.visual-inner1, div.visual-maintext1").css({ display: "block" });
+    $("div.visual-inner, div.visual-inner-middle, div.visual-maintext2").css({ display: "none" });
+    $("div.visual-inner1, div.m1, div.visual-maintext1").css({ display: "block" });
   });
   $("div.con-btn ul li:nth-child(2) label").click(function () {
-    $("div.visual-inner, div.visual-maintext2").css({ display: "none" });
-    $("div.visual-inner2, div.visual-maintext1").css({ display: "block" });
+    $("div.visual-inner, div.visual-inner-middle ,div.visual-maintext2").css({ display: "none" });
+    $("div.visual-inner2, div.m1, div.visual-maintext1").css({ display: "block" });
   });
   $("div.con-btn ul li:nth-child(3) label").click(function () {
     $("div.visual-inner, div.visual-maintext2").css({ display: "none" });
-    $("div.visual-inner3, div.visual-maintext1").css({ display: "block" });
+    $("div.visual-inner3, div.m1, div.visual-maintext1").css({ display: "block" });
   });
   $("div.con-btn ul li:nth-child(4) label").click(function () {
     $("div.visual-inner, div.visual-maintext2").css({ display: "none" });
-    $("div.visual-inner4, div.visual-maintext1").css({ display: "block" });
+    $("div.visual-inner4, div.m1 ,div.visual-maintext1").css({ display: "block" });
   });
   $("div.con-btn ul li:nth-child(5) label").click(function () {
-    $("div.visual-inner, div.visual-maintext2").css({ display: "none" });
-    $("div.visual-inner5, div.visual-maintext1").css({ display: "block" });
+    $("div.visual-inner, div.visual-inner-middle, div.visual-maintext2").css({ display: "none" });
+    $("div.visual-inner5, div.m1, div.visual-maintext1").css({ display: "block" });
   });
   $("div.con-btn ul li:nth-child(6) label").click(function () {
     $("div.visual-inner, div.visual-maintext1").css({ display: "none" });
-    $("div.visual-inner6, div.visual-maintext2").css({ display: "block" });
+    $("div.visual-inner6, div.m1, div.visual-maintext2").css({ display: "block" });
   });
 
   $("div.visual-inner-bottom ul li:nth-child(2) label").click(function () {
     $("div.visual-inner-middle").css({ display: "none" });
     $("div.m1").css({ display: "block" });
-    $(document).reload();
   });
   $("div.visual-inner-bottom ul li:nth-child(3) label").click(function () {
     $("div.visual-inner-middle").css({ display: "none" });
@@ -113,4 +112,5 @@ $(function () {
     $("div.visual-inner-middle").css({ display: "none" });
     $("div.m7").css({ display: "block" });
   });
+
 });
